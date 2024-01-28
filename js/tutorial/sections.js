@@ -67,6 +67,7 @@ function register_VIM_TUTORIAL_SECTIONS(interpreter, messager, createSection, re
         interpreter.interpretSequence(["Esc", "o"]);
       }
 
+      text=localizer[text] || text;
       var words = text.split(" ");
 
       G.for_each(words, function(word) {
